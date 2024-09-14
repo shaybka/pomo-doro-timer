@@ -1,0 +1,60 @@
+.body {
+    max-width: 620px;
+    height: 566px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .containetTabs{
+       
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(100px);
+        width: 480px;
+        height: 375px;
+        text-align: center;
+        margin-top: 60px;
+        border-radius: 5px;
+        .tabs{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 23px;
+            align-items: center;
+            cursor: pointer;
+        }
+        .active{
+            // margin-right: 20px;
+               padding: 4px 4px;
+                border-radius: 3px;
+                font-weight: 700;
+                backdrop-filter: blur(10px);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+               background: none rgba(0, 0, 0, 0.15);
+        }
+        .tabContent{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-top: 40px;
+         span{
+             font-size: 89px;
+             font-weight: 800;
+             font-family:Arial, Helvetica, sans-serif;
+         }
+        }
+        .btn{
+             background-color: #ffffff;
+             color: #BA4949;
+             padding: 10px 90px;
+             border-radius: 5px;
+             cursor: pointer;
+             border: none;
+             margin-top: 20px;
+             font-size: xx-large;
+         }
+        
+    }
+}

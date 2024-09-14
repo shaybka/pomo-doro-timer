@@ -1,0 +1,54 @@
+@use '../../variable.scss' as mixin;
+
+body {
+    background-color: mixin.$primaryColor;
+    color: mixin.$textColor;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.091);
+    max-height: 60px;
+
+    .logo {
+        span {
+            padding: 4px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logoicon {
+            font-size: 24px;
+        }
+
+
+    }
+
+
+
+    .menues {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-right: 20px;
+                padding: 8px 8px;
+                border-radius: 3px;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .icon {
+                    padding: 0px 4px;
+                }
+            }
+        }
+    }
+}
